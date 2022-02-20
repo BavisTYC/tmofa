@@ -341,9 +341,9 @@ footer {
 .modal-body {
   padding: 0rem !important;
 }
-.modal-content {
+.modal-content-bg {
   background-color: none;
-  background: url(../img/authorbg2.jpg) no-repeat center center fixed;
+  background: url(../img/authorbg5.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

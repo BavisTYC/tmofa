@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>桃園市立美術館</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/animate.css" />
-  <link rel="stylesheet" href="./css/style2.css" />
-  <link rel="stylesheet" href="./css/media-queries.css" />
-  <link rel="stylesheet" href="./css/bootstrap4-modal-fullscreen.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="../css/media-queries.css" />
+  <link rel="stylesheet" href="../css/bootstrap4-modal-fullscreen.css" />
   <script>
 
   </script>
@@ -32,7 +31,7 @@
       z-index: 1;
     }
     .video:hover{
-      cursor: url('../img/w2-icon.png'), auto;
+      cursor: url('img/w3-icon.png'), auto;
     }
 
     .carousel-indicators li {
@@ -72,10 +71,10 @@
     <div id="navmenu">
       <ul>
         <li>
-          <a href=""><img src="./img/nav02-1.png" alt="回到首頁" /></a>
+          <a href=""><img src="img/nav03-1.png" alt="回到首頁" /></a>
         </li>
         <li>
-          <a href="" data-toggle="modal" data-target="#exampleModal"><img src="./img/nav02-2.png" alt="藝術家和他的創作" /></a>
+          <a href="" data-toggle="modal" data-target="#exampleModal"><img src="img/nav03-2.png" alt="藝術家和他的創作" /></a>
         </li>
       </ul>
       <!-- <button>Pause</button> -->
@@ -83,20 +82,20 @@
     <!-- Carousel -->
     <div id="carousel-example" class="carousel slide" data-interval="false" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example" data-slide-to="0" style="background-image: url('./img/w2-button01.png')"
+        <li data-target="#carousel-example" data-slide-to="0" style="background-image: url('img/w3-button01.png')"
           class="active">
         </li>
-        <li data-target="#carousel-example" data-slide-to="1" style="background-image: url('./img/w2-button02.png')">
+        <li data-target="#carousel-example" data-slide-to="1" style="background-image: url('img/w3-button02.png')">
         </li>
-        <li data-target="#carousel-example" data-slide-to="2" style="background-image: url('./img/w2-button03.png')">
+        <li data-target="#carousel-example" data-slide-to="2" style="background-image: url('img/w3-button03.png')">
         </li>
-        <li data-target="#carousel-example" data-slide-to="3" style="background-image: url('./img/w2-button04.png')">
+        <li data-target="#carousel-example" data-slide-to="3" style="background-image: url('img/w3-button04.png')">
         </li>
       </ol>
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./img/w2-image01.jpeg" class="" alt="slide-img-1" />
+          <img src="img/w3-image01.jpeg" class="" alt="slide-img-1" />
           <div class="carousel-info">
             <div>close</div>
             <p>葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中</p>
@@ -105,7 +104,7 @@
           <!-- <video id="videoid" class="video" src="./mv/lioncat.mp4" loop muted
             onclick="this.paused?this.play():this.pause();"></video> -->
           <!-- <div class="playpause"></div> -->
-          <div class="carousel-caption">
+          <!-- <div class="carousel-caption">
             <h1>Carousel Fullscreen Template</h1>
             <div class="carousel-caption-description">
               <p>
@@ -113,39 +112,21 @@
                 Bootstrap 4 framework.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="carousel-item">
-          <img src="./img/w2-image02.jpeg" class="" alt="slide-img-2" />
-          <div class="carousel-caption">
-            <h3>Caption for Image 2</h3>
-            <div class="carousel-caption-description">
-              <p>This is the caption description text for image 2.</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-              </button>
-            </div>
-          </div>
+          <img src="img/w3-image02.jpeg" class="" alt="slide-img-2" />
+          
         </div>
         <div class="carousel-item">
-          <img src="./img/w2-image03.jpeg" class="" alt="slide-img-3" />
-          <div class="carousel-caption">
-            <h3>Caption for Image 3</h3>
-            <div class="carousel-caption-description">
-              <p>This is the caption description text for image 3.</p>
-            </div>
-          </div>
+          <img src="img/w3-image03.jpeg" class="" alt="slide-img-3" />
+          
         </div>
         <div class="carousel-item">
           <!-- <img src="./img/w2-image04.jpeg" class="" alt="slide-img-4" /> -->
-          <video id="videoid" class="video" src="./mv/lioncat.mp4" loop muted
+          <video id="videoid" class="video" src="mv/lioncat.mp4" loop muted
             onclick="this.paused?this.play():this.pause();"></video>
-          <div class="carousel-caption">
-            <h3>Caption for Image 4</h3>
-            <div class="carousel-caption-description">
-              <p>This is the caption description text for image 4.</p>
-            </div>
-          </div>
+          
         </div>
       </div>
 
@@ -166,11 +147,11 @@
   <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content modal-content-bg">
         <div class="modal-body">
           <div class="row authorow">
             <div class="col-md-7 align-r">
-              <img src="./img/author2-info.png" alt="藝術家作品" />
+              <img src="img/author3-info.png" alt="藝術家作品" />
             </div>
             <div class="col-md-5" style=" margin-bottom:-20%  overflow: hidden;">
               <div class="author-info" id="style-3" style="">
@@ -192,7 +173,7 @@
                 </p>
               </div>
               <div class="align-r backicon">
-                <img src="./img/nav-back.png" alt="" data-dismiss="modal" aria-label="Close" />
+                <img src="img/nav-back.png" alt="" data-dismiss="modal" aria-label="Close" />
               </div>
             </div>
           </div>
