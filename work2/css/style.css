@@ -22,14 +22,13 @@ video {
     background-size: cover;
     transition: 1s opacity;
 }
-
 .maskicon {
     display: inline-block;
     position: absolute;
 }
 
-.maskicon:hover {
-    cursor: url('../img/mouseicon.png'), auto;
+.maskicon a:hover {
+    cursor: url('../img/mouseicon.png'), auto !important;
 }
 
 .mask1 {
@@ -63,10 +62,32 @@ video {
 
 #navmenu ul {
     list-style: none;
+    text-align: right;
+}
+#navmenu ul li{
+    margin: 10px 0;
 }
 
-#navmenu ul li {
-    margin: 8px 0;
+#navmenu ul li span {
+    margin: 8px 5px;
+    font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    top:5px;
+    letter-spacing: 3px;
+    text-shadow: 4px 2px 8px rgba(0, 0, 0, 0.4);
+}
+#navmenu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#navmenu ul li a:hover > span{
+    opacity: 1;
+    
 }
 
 .navhome {
@@ -79,13 +100,21 @@ video {
     padding: 0rem !important;
 }
 
-.modal-content {
+.modal-contentbg1 {
     background-color: none;
     background: url(../img/authorbg2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.modal-contentbg2 {
+    background-color: #fff;
+}
+
+.modal-body p{
+    padding: 20px 15px 5px 15px;
 }
 
 .authorow {
@@ -165,21 +194,12 @@ h1 {
     background: rgba(255, 255, 255, 0.23);
     color: #fff;
     border-radius: 3px;
-    cursor: pointer;
     transition: 0.3s background;
 }
 
 #polina button:hover {
     background: rgba(0, 0, 0, 0.5);
 }
-
-a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover {}
 
 @media screen and (max-width: 500px) {
     div {

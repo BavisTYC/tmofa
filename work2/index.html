@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>桃園市立美術館</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/solar/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/bootstrap4-modal-fullscreen.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="topmain">
-        <span class="maskicon mask1">
-        <a href="work1.html"><img src="img/mask1.png" alt="" /></a>
+      <span class="maskicon mask1">
+        <a href="#"><img src="img/mask1.png" alt="" /></a>
       </span>
-        <span class="maskicon mask2">
+      <span class="maskicon mask2">
         <a href="work2.html"><img src="img/mask2.png" alt="" /></a>
       </span>
-        <span class="maskicon mask3">
-        <a href="work3.html"><img src="img/mask3.png" alt="" /></a>
+      <span class="maskicon mask3">
+        <a href="#"><img src="img/mask3.png" alt="" /></a>
       </span>
-        <span class="maskicon mask4">
+      <span class="maskicon mask4">
         <a href="work4.html"><img src="img/mask4.png" alt="" /></a>
       </span>
-        <!-- partial:index.partial.html -->
-        <video poster="img/homebg02.jpg" id="bgvid" playsinline autoplay muted loop>
+      <!-- partial:index.partial.html -->
+      <video
+        poster="img/homebg02.jpg"
+        id="bgvid"
+        playsinline
+        autoplay
+        muted
+        loop
+      >
         <!-- 
 - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
 WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
         <source src="#" type="video/webm" />
-        <source
-          src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4"
-          type="video/mp4"
-        />
+        <source src="mv/00work02.mp4" type="video/mp4" />
       </video>
     </div>
     <div id="navmenu">
-        <ul>
-            <li>
-                <a href=""><img src="img/nav02-1.png" alt="回到首頁" /></a>
-            </li>
-            <li>
-                <a href="" data-toggle="modal" data-target="#exampleModal"><img src="img/nav02-2.png" alt="藝術家和他的創作" /></a>
-            </li>
-        </ul>
-        <!-- <button>Pause</button> -->
+      <ul>
+        <li>
+          <a href=""
+            ><span>回到首頁</span><img src="img/nav02-1.png" alt="回到首頁"
+          /></a>
+        </li>
+        <li>
+          <a href="" data-toggle="modal" data-target="#exampleModal"
+            ><span>藝術家和他的創作</span
+            ><img src="img/nav02-2.png" alt="藝術家和他的創作"
+          /></a>
+        </li>
+      </ul>
+      <!-- <button>Pause</button> -->
     </div>
 
-    <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content modal-content-bg">
-                <div class="modal-body">
-                    <div class="row authorow">
-                        <div class="col-md-6 align-r">
-                            <img src="img/author2-info.png" alt="藝術家作品" />
-                        </div>
-                        <div class="col-md-5" style=" margin-bottom:-20%  overflow: hidden;">
-                            <div class="author-info" id="style-3" style="">
-                                <h1>葉海地</h1>
-                                <p>
-                                    出生於香港，加拿大長大，從小就喜愛繪畫與創作。大學就讀於Ontario College of Art & Design 主修繪畫，留學至義大利佛羅倫斯，旅居紐約，豐富的成長歷程開啟了藝術家的旅行生活與創作探索。2007年從紐約到台東東部旅行，深深被東海岸所吸引並決定搬到台東生活創作，開啟了其繪畫探險的未知世界。
-                                </p>
-                                <h3>關於創作</h3>
-                                <p>
-                                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
-                                </p>
-                                <p>
-                                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
-                                </p>
-                                <p>
-                                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中ß
-                                </p>
-                            </div>
-                            <div class="align-r backicon">
-                                <img src="img/nav-back.png" alt="" data-dismiss="modal" aria-label="Close" />
-                            </div>
-                        </div>
-                    </div>
+    <div
+      class="modal fade modal-fullscreen"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal-contentbg1">
+          <div class="modal-body">
+            <div class="row authorow">
+              <div class="col-md-6 align-r">
+                <img src="img/author2-info.png" alt="藝術家作品" />
+              </div>
+              <div
+                class="col-md-5"
+                style=" margin-bottom:-20%  overflow: hidden;"
+              >
+                <div class="author-info" id="style-3" style="">
+                  <h1>葉海地</h1>
+                  <p>
+                    出生於香港，加拿大長大，從小就喜愛繪畫與創作。大學就讀於Ontario
+                    College of Art & Design
+                    主修繪畫，留學至義大利佛羅倫斯，旅居紐約，豐富的成長歷程開啟了藝術家的旅行生活與創作探索。2007年從紐約到台東東部旅行，深深被東海岸所吸引並決定搬到台東生活創作，開啟了其繪畫探險的未知世界。
+                  </p>
+                  <h3>關於創作</h3>
+                  <p>
+                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
+                  </p>
+                  <p>
+                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
+                  </p>
+                  <p>
+                    葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中ß
+                  </p>
                 </div>
+                <div class="align-r backicon">
+                  <img
+                    src="img/nav-back.png"
+                    alt=""
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

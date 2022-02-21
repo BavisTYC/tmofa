@@ -71,10 +71,13 @@
     <div id="navmenu">
       <ul>
         <li>
-          <a href=""><img src="img/nav03-1.png" alt="回到首頁" /></a>
+          <a href=""><img src="img/nav03-1.png" alt="回到首頁" /><span>回到首頁</span></a>
         </li>
         <li>
-          <a href="" data-toggle="modal" data-target="#exampleModal"><img src="img/nav03-2.png" alt="藝術家和他的創作" /></a>
+          <a href="" data-toggle="modal" data-target="#exampleModal"><img src="img/nav03-2.png" alt="藝術家和他的創作" /><span>藝術家和他的創作</span></a>
+        </li>
+        <li class="imginfo">
+          <a href=""  alt="進化之旅" /><img src="img/nav03-3.png" alt="進化之旅" /><span>進化之旅</span></a>
         </li>
       </ul>
       <!-- <button>Pause</button> -->
@@ -96,10 +99,36 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/w3-image01.jpeg" class="" alt="slide-img-1" />
-          <div class="carousel-info">
-            <div>close</div>
-            <p>葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中</p>
+          <!--  作品說明  -->
+          <div class="carousel-info" id="imginfo01">
+            <div><img src="img/nav03-close.png" alt="Close" ></div>
+            <div class="image-info style-3">
+              <p>在這個視窗前我們會看見日本朝日電視台的《假面騎士龍騎》。望向窗外：《谿山行旅圖》為北宋畫家范寬的作品，以淺淡的色彩作極為精緻的構圖，舉凡山川流水、高山岩石，都能細心勾勒且呈現出立體的空間感。</p>
+            <p>山水畫是東方獨特的藝術風格，將時間的概念帶入創作之中，比西方的立體派還早上了幾百年。</p>
+            <p>高山象徵大自然的偉大，人類發明了能對抗地心引力的熱氣球，卻只能順應氣流，無法隨心所欲地控制方向。</p>
+            </div>
           </div>
+          <div class="carousel-info" id="imginfo02">
+            <div><img src="img/nav03-close.png" alt="Close" ></div>
+            <div class="image-info style-3">
+              <p>在這個視窗前我們會看見1964年英國科幻木偶劇「雷鳥神機隊」中駕駛二號機的維吉．崔西（Virgil Tracy）。二號機像一隻巨大的綠色金龜子，機腹中藏有不同任務需要的特殊設備。</p>
+              <p>視窗外是美麗的風景，但仔細看卻隱藏著一朵形狀獨特的原子彈爆發後所產生的「蕈狀雲」！許多軍事強國暗地裡進行核武試爆，強大的震波讓地殼默默地吸收核武釋放出來的力量，多少導致世界各地近年來持續不斷發生強震。</p>
+              <p>蕈狀雲雖然奇特，但我們當然不樂意看見。如果不幸發生了，即便是雷鳥神機隊，恐怕也很難即時拯救受傷的大地與無數的生命！</p>
+            </div>
+          </div>
+          <div class="carousel-info" id="imginfo03">
+            <div><img src="img/nav03-close.png" alt="Close" ></div>
+            <div class="image-info style-3">
+              <p>當我們心中有所盼望時，腦袋裡的思想往往會欺騙眼睛，如同思念故鄉的小王子，眼中所見的月球也彷彿是自己所居住的B612小行星。</p>
+            </div>
+          </div>
+          <div class="carousel-info" id="imginfo04">
+            <div><img src="img/nav03-close.png" alt="Close" ></div>
+            <div class="image-info style-3">
+              <p>在這個視窗前我們會看見1985年美國動畫《霹靂貓》（ThunderCats）當中的獅貓（Lion-O），看向窗外：為了生存繁衍，天地萬物演化出各種自我保護的機制或武器。帛琉牛奶湖裡的水母，因地殼上升與變動逐漸與外界隔絕。經過千萬年的演化，湖泊中幾乎只剩下水母存活下來。在沒有天敵的環境下，水母用來保護自己的有毒觸手也慢慢變的無毒。人類自詡為地球的主人，在沒有天敵的形態下，人類唯一的敵人就是自己。</p>
+            </div>
+          </div>
+          <!--  作品說明  -->
           <!-- <video src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4" loop muted autoplay></video> -->
           <!-- <video id="videoid" class="video" src="./mv/lioncat.mp4" loop muted
             onclick="this.paused?this.play():this.pause();"></video> -->
@@ -124,7 +153,7 @@
         </div>
         <div class="carousel-item">
           <!-- <img src="./img/w2-image04.jpeg" class="" alt="slide-img-4" /> -->
-          <video id="videoid" class="video" src="mv/lioncat.mp4" loop muted
+          <video id="videoid" class="video" src="mv/lioncat.mp4" loop 
             onclick="this.paused?this.play():this.pause();"></video>
           
         </div>
@@ -150,27 +179,19 @@
       <div class="modal-content modal-content-bg">
         <div class="modal-body">
           <div class="row authorow">
-            <div class="col-md-7 align-r">
+            <div class="col-md-6 align-r">
               <img src="img/author3-info.png" alt="藝術家作品" />
             </div>
             <div class="col-md-5" style=" margin-bottom:-20%  overflow: hidden;">
-              <div class="author-info" id="style-3" style="">
-                <h1>葉海地</h1>
+              <div class="author-info style-3" id="" >
+                <h1>曹文瑞</h1>
                 <p>
-                  出生於香港，加拿大長大，從小就喜愛繪畫與創作。大學就讀於Ontario
-                  College of Art & Design
-                  主修繪畫，留學至義大利佛羅倫斯，旅居紐約，豐富的成長歷程開啟了藝術家的旅行生活與創作探索。2007年從紐約到台東東部旅行，深深被東海岸所吸引並決定搬到台東生活創作，開啟了其繪畫探險的未知世界。
+                  曹文瑞1995年從美國獲得碩士學位回來，開始從事各種藝文產業的經營與推廣，卓然有成之後終於能在2009年專心投入藝術創作，成為專職藝術家。一 旦投入，他的狂熱與旺盛的創造欲展現在每年一檔以上質精的個展。
                 </p>
-                <h3>關於創作</h3>
-                <p>
-                  葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
-                </p>
-                <p>
-                  葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中
-                </p>
-                <p>
-                  葉海地的油畫創作，對於萬物有靈的宇宙觀有豐富而細緻的呈現。藝術家曾遊牧世界各原始部落，學習遠古的薩滿智慧，最後落腳台灣東海岸。海邊的生活看麼平靜卻時刻在變化，自然中俯拾皆是泛靈智慧的提示。藝術家透過繪畫，為海邊變絓莫測的風景進行紀錄，又將對靈性的詮釋傾注其差中ß
-                </p>
+                <p>他的造形清晰、明快、精準，用色明亮光潔，接近美國從1920年代的「精準主義」(precisionism)、60年代的普普藝術 (Pop Art)、以及1970年代的「超寫實主義」(hyperrealism)的主張。大片平塗缺乏明暗調子的色面，過度銳利的準確輪廓與邊角，幾乎抵銷了畫作中的透視、景深與體感，使他的作品看似寫實，實則抽象；看似客觀，實則主觀。如此的造形語彙並非來自學院傳統，而是來自平面設計、廣告、招貼、動漫等大眾文化。</p>
+                <h3>創作論述</h3>
+                <p>人生不過是一段旅程，這段旅程不管長度如何，彷彿只是作了一場夢而已，夢中的場景一幕幕的更換，到底什麼才是真實。每個人面對旅程的態度雖然不盡相同，不過許多人似乎只把注意力放在旅程的目的地。至於過程中有甚麼樣令人驚豔，讓人難忘的美麗景緻好像從來不曾關心，甚至是視而不見...</p>
+                <p>2009年開始創作「心靈視窗系列」。以挪用及拼貼的手法將真實的風景經過重組與變造，將景色塑造成類似劇場的佈景一般，以此概念揶揄、反諷人類一直想要改變自然與大自然對抗的自大心態。</p>
               </div>
               <div class="align-r backicon">
                 <img src="img/nav-back.png" alt="" data-dismiss="modal" aria-label="Close" />
