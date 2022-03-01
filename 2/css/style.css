@@ -8,6 +8,7 @@ body {
     height: 100vh;
 }
 
+
 /* video {
     position: fixed;
     top: 50%;
@@ -22,18 +23,20 @@ body {
     background-size: cover;
     transition: 1s opacity;
 } */
-.vid01{
+
+.vid01 {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     min-width: 100%;
     min-height: 100%;
-    z-index: 999;
+    z-index: 2;
     width: 100%;
     height: 100vh;
 }
-.vid02{
+
+.vid02 {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -44,6 +47,7 @@ body {
     width: 100%;
     height: 100vh;
 }
+
 .maskicon {
     display: inline-block;
     position: absolute;
@@ -80,13 +84,15 @@ body {
     position: absolute;
     top: 5%;
     right: 5%;
+    z-index: 10;
 }
 
 #navmenu ul {
     list-style: none;
     text-align: right;
 }
-#navmenu ul li{
+
+#navmenu ul li {
     margin: 10px 0;
 }
 
@@ -99,23 +105,25 @@ body {
     opacity: 0;
     transition: all .5s;
     position: relative;
-    top:5px;
+    top: 5px;
     letter-spacing: 3px;
     text-shadow: 4px 2px 8px rgba(0, 0, 0, 0.4);
 }
-#navmenu ul li a{
+
+#navmenu ul li a {
     color: #fff;
     text-decoration: none;
 }
-#navmenu ul li a:hover > span{
+
+#navmenu ul li a:hover>span {
     opacity: 1;
-    
 }
 
 .navhome {
     position: absolute;
     bottom: 5%;
     right: 5%;
+    z-index: 10;
 }
 
 .modal-body {
@@ -135,7 +143,7 @@ body {
     background-color: #fff;
 }
 
-.modal-body p{
+.modal-body p {
     padding: 20px 15px 5px 15px;
 }
 
