@@ -51,6 +51,7 @@ body {
 .maskicon {
     display: inline-block;
     position: absolute;
+    z-index: 5;
 }
 
 .maskicon a:hover {
