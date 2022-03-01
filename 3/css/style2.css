@@ -214,6 +214,7 @@
         padding: 20px 20px 0px 25px;
         opacity: 1;
         transition: opacity .5s;
+        z-index: 99;
     }
     
     .actives {
