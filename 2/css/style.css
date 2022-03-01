@@ -58,21 +58,30 @@ body {
     cursor: url('../img/mouseicon.png'), auto !important;
 }
 
+.maskicon img {
+    width: 100%;
+    height: auto;
+}
+
 .mask1 {
+    width: 25%;
     top: 24%;
 }
 
 .mask2 {
-    bottom: 0px;
-    left: 35%;
+    width: 25%;
+    bottom: 0%;
+    left: 38%;
 }
 
 .mask3 {
-    bottom: 33%;
-    right: 15%;
+    width: 16%;
+    bottom: 35%;
+    right: 20%;
 }
 
 .mask4 {
+    width: 10%;
     top: 0;
     left: 40%;
 }
