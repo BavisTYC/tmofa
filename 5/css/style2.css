@@ -348,7 +348,8 @@ footer {
     list-style: none;
     text-align: left;
 }
-#navmenu ul li{
+
+#navmenu ul li {
     margin: 10px 0;
     padding-right: 10px;
 }
@@ -359,18 +360,19 @@ footer {
     font-weight: 500;
     font-size: 1.3rem;
     color: #6b645a;
-    opacity: 0.8;
+    opacity: 0;
     transition: all .5s;
     position: relative;
-    top:5px;
+    top: 5px;
     letter-spacing: 1px;
 }
-#navmenu ul li a{
+
+#navmenu ul li a {
     color: #6b645a;
 }
-#navmenu ul li a:hover > span{
+
+#navmenu ul li a:hover>span {
     opacity: 1;
-    
 }
 
 .modal-body {
@@ -423,18 +425,19 @@ footer {
 }
 
 .author-info p {
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 1rem;
     color: #fff;
-    line-height: 1.8rem;
+    line-height: 2rem;
     padding: 0.5rem 0 2rem 0;
+    text-indent: 32px;
 }
 
 .backicon img {
     height: 80%;
     padding-top: 50px;
 }
-.backicon{
+
+.backicon {
     position: absolute;
     bottom: 5%;
     right: 5%;
@@ -454,26 +457,31 @@ footer {
 .style-3::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
+
 .image-info {
     height: 100vh;
     width: 100vw;
-    overflow-y:scroll;
+    overflow-y: scroll;
     position: relative;
 }
-.image-info img{
+
+.image-info img {
     height: auto;
     width: 100%;
 }
-.infoid{
+
+.infoid {
     width: 100%;
     position: absolute;
     bottom: 50px;
     font-size: 1.5rem;
     text-align: center;
 }
-.infoid a{
+
+.infoid a {
     color: #000;
 }
-.infoid a:hover{
+
+.infoid a:hover {
     color: #4aaab0;
 }

@@ -124,33 +124,18 @@
             </div>
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" style="background-image:url('./img/w3-image01_bg.png')">
                     <img src="img/w3-image01.jpeg" class="" alt="slide-img-1" />
-                    
-                    <!--  作品說明  -->
-                    <!-- <video src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4" loop muted autoplay></video> -->
-                    <!-- <video id="videoid" class="video" src="./mv/lioncat.mp4" loop muted
-            onclick="this.paused?this.play():this.pause();"></video> -->
-                    <!-- <div class="playpause"></div> -->
-                    <!-- <div class="carousel-caption">
-            <h1>Carousel Fullscreen Template</h1>
-            <div class="carousel-caption-description">
-              <p>
-                This is a free Fullscreen Carousel template made with the
-                Bootstrap 4 framework.
-              </p>
-            </div>
-          </div> -->
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" style="background-image:url('./img/w3-image02_bg.png')">
                     <img src="img/w3-image02.jpeg" class="" alt="slide-img-2" />
 
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" style="background-image:url('./img/w3-image03_bg.png')">
                     <img src="img/w3-image03.jpeg" class="" alt="slide-img-3" />
 
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" style="background-image:url('./img/w3-image04_bg.png')">
                     <!-- <img src="./img/w2-image04.jpeg" class="" alt="slide-img-4" /> -->
                     <video id="videoid" class="video" src="mv/lioncat.mp4" loop preload="metadata" onclick="this.paused?this.play():this.pause();"></video>
 
@@ -204,13 +189,13 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script>
-		$(function() {
-           $('#imginfo01').hide();
-           $('#imginfo02').hide();
-           $('#imginfo03').hide();
-           $('#imginfo04').hide();
-           var currentIndex = 0;
-            $('#carousel-example').on('slide.bs.carousel', function (event) {
+        $(function() {
+            $('#imginfo01').hide();
+            $('#imginfo02').hide();
+            $('#imginfo03').hide();
+            $('#imginfo04').hide();
+            var currentIndex = 0;
+            $('#carousel-example').on('slide.bs.carousel', function(event) {
                 var $hoder = $('#carousel-example').find('.carousel-item'),
                     $items = $(event.relatedTarget);
                 //getIndex就是輪播到當前位置的索引
@@ -220,15 +205,14 @@
                 $('#imginfo03').hide();
                 $('#imginfo04').hide();
             });
-            $('.carousel-info img').click(function(){
+            $('.carousel-info img').click(function() {
                 $('#imginfo01').hide();
                 $('#imginfo02').hide();
                 $('#imginfo03').hide();
                 $('#imginfo04').hide();
             });
-            $('#btnInfo').click(function(){
-                switch(currentIndex)
-                {
+            $('#btnInfo').click(function() {
+                switch (currentIndex) {
                     case 0:
                         $('#imginfo01').show();
                         $('#imginfo02').hide();
@@ -255,7 +239,7 @@
                         break;
                 }
             });
-        });        
+        });
     </script>
 </body>
 
